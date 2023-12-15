@@ -13,7 +13,7 @@ for line in io.lines("input.txt") do
         haveList[num] = true
     end
 
-    cards[tonumber(cardNo)] = { winning = winningList, have = haveList, count = 1 }
+    cards[tonumber(cardNo)] = { winning = winningList, have = haveList }
 end
 
 -- getWins returns the number of wins a card has.
