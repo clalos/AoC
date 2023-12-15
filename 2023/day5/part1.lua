@@ -1,5 +1,3 @@
-local isMap, seeds, map = false, {}, {}
-
 -- moveSeeds moves seeds according to the map
 local function moveSeeds(seeds, map)
     local seedsMoved = {}
@@ -11,10 +9,10 @@ local function moveSeeds(seeds, map)
             end
         end
     end
-    return seedsMoved
 end
 
 -- read input
+local isMap, seeds, map = false, {}, {}
 for line in io.lines("input.txt") do
     if line:find("seeds") then
         for s in line:gmatch("%d+") do
