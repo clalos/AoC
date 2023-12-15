@@ -27,7 +27,7 @@ local function getWins(card)
     return wins
 end
 
--- play returns the total number of cards played from the given card.
+-- play returns the total number of cards played from the given card
 local function play(cardNo, card)
     local wins = getWins(card)
     local count = 1
