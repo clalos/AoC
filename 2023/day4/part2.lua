@@ -16,7 +16,7 @@ for line in io.lines("input.txt") do
     cards[tonumber(cardNo)] = { winning = winningList, have = haveList }
 end
 
--- getWins returns the number of wins a card has.
+-- getWins returns the number of wins a card has
 local function getWins(card)
     local wins = 0
     for winningNo, _ in pairs(card.winning) do
