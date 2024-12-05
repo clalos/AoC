@@ -28,8 +28,7 @@ with open("input.txt", "r", encoding="utf8") as file:
             if update == update_sorted:
                 correct_update_sum += update[len(update) // 2]
             else:
-                update.sort(key=cmp_to_key(compare))
-                incorrect_update_sum += update[len(update) // 2]
+                incorrect_update_sum += update_sorted[len(update_sorted) // 2]
             continue
         # Rules section
         first, second = map(int, line.strip().split("|"))
